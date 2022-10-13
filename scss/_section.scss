@@ -6,13 +6,7 @@ $bg5: azure;
 $bg6: cadetblue;
 
 
-.df-ol{
-    background: url(./img/medialunas.jpg) no-repeat;
-    background-size: cover;
-    grid-area: df-ol;
-    top:70px;
-    
-}
+
 /*panes*/
 .caja1{
     background-color: #ae1116; 
@@ -130,7 +124,7 @@ $bg6: cadetblue;
 .df-ol {
     margin: -0%;
     justify-content: space-around;
-    height: 30%;
+    height: 485px;
     padding: 10%;
     width: 100%;
     text-transform: uppercase;

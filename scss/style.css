@@ -13,12 +13,13 @@ body {
 .bg-footer {
   background-color: #891619;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   display: flex;
   justify-content: space-between;
   grid-area: footer;
   color: cadetblue;
+  margin: auto;
 }
 
 .redes {
@@ -56,7 +57,7 @@ body {
 .bg-footer-productos {
   background-color: #891619;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -64,23 +65,32 @@ body {
   grid-area: footer;
 }
 
+/*.bg-footer-contactos {
+    background-color: #891619;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+    margin-top:auto;
+ }*/
 .bg-footer-contactos {
-  background-color: #891619;
-  text-align: left;
-  position: absolute;
+  background: #891619;
   bottom: 0;
-  width: 100%;
-  padding: 1em;
-  color: #fff;
-  font-weight: 100;
-  bottom: 0;
-  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  font-size: 17;
 }
 
 /*header index*/
 .nav {
   background: #891619;
-  height: 80px;
+  height: 70px;
   width: 100%;
   padding: 10px;
   font-size: 12px;
@@ -113,6 +123,7 @@ li a.active, li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   top: 70px;
+  background-attachment: static;
   background-position: center;
 }
 
@@ -129,16 +140,6 @@ li a.active, li a:hover {
 }
 
 /*fondo de pantalla de productos html*/
-.productos {
-  background-image: url(../img/medialunas_argentinas.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
 
 /*fondo de pantalla de servicios empresas html*/
 .serviciosempres {
@@ -166,25 +167,30 @@ a {
   text-decoration: none;
 }
 
-.menu {
-  float: right;
-  margin-right: 20px;
+.nav {
+  align-items: center;
+}
+
+.menu ul {
+  margin: 0;
   display: flex;
   list-style: none;
   text-transform: uppercase;
   border-radius: 15px;
-  position: relative;
-  justify-content: space-around;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+main {
+  margin: 15px;
 }
 
 .menu li a {
-  margin: 0px;
-  margin-left: 0px;
   display: block;
   color: #fff;
-  padding: 20px;
+  padding: 15px;
   width: 100%;
-  height: 100%;
+  height: 40px;
 }
 
 /*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */
@@ -219,11 +225,46 @@ li a.active, .menu a:hover {
   float: left;
 }
 
-.df-ol {
-  background: url(./img/medialunas.jpg) no-repeat;
-  background-size: cover;
-  grid-area: df-ol;
-  top: 70px;
+/*formulario*/
+.df-formulario {
+  width: 300px;
+  margin: auto;
+  margin-top: 35px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.contacto {
+  margin: 0;
+}
+
+input, textarea {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #be1218;
+}
+
+#boton:hover {
+  cursor: pointer;
 }
 
 /*panes*/
@@ -240,7 +281,7 @@ li a.active, .menu a:hover {
 }
 
 .caja1:hover {
-  background-color: #aliceblue;
+  background-color: aliceblue;
   /*background-color: aliceblue;*/
   transition: all 2s ease;
 }
@@ -259,7 +300,7 @@ li a.active, .menu a:hover {
 }
 
 .caja2:hover {
-  background-color: #aqua;
+  background-color: aqua;
   /*background-color: aliceblue*/
   transition: all 2s ease;
 }
@@ -343,7 +384,7 @@ li a.active, .menu a:hover {
 .df-ol {
   margin: 0%;
   justify-content: space-around;
-  height: 30%;
+  height: 485px;
   padding: 10%;
   width: 100%;
   text-transform: uppercase;
@@ -367,20 +408,24 @@ li a.active, .menu a:hover {
   .menu li {
     font-size: 15px;
     display: grid;
-    line-height: 30px;
+    line-height: 10px;
     margin: 50px 0;
     transition: all 0.5s;
+    height: 40px;
   }
 }
 @media screen and (max-width: 480px) {
   .ul {
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 100px;
+    width: 70%;
+    top: 80px;
     background: rgba(0, 0, 0, 0.95);
     text-align: center;
     transition: all 0.5s;
+  }
+  nav ul li a {
+    font-size: 10px;
+    line-height: 5px;
   }
 }
 @media (max-width: 952px) {
@@ -397,9 +442,6 @@ li a.active, .menu a:hover {
   }
 }
 @media (max-width: 720px) {
-  .enlace {
-    padding-left: 20px;
-  }
   .logo {
     padding-left: 30px;
   }
@@ -411,24 +453,20 @@ li a.active, .menu a:hover {
     width: 300px;
   }
   .index {
-    height: 550px;
+    height: 1024px;
   }
   .menu {
-    display: block;
-    flex-direction: column;
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 70%;
+    margin-left: -70%;
     background: #913033;
-    margin-top: 78px;
+    margin-top: 60px;
     left: 100%;
     text-align: center;
     transition: all 0.5s;
   }
-  .menu li {
-    display: block;
-    margin: 50px 0;
-    line-height: 40px;
+  .menu ul {
+    flex-direction: column;
   }
   .logo {
     margin-top: 0px;
@@ -442,9 +480,6 @@ li a.active, .menu a:hover {
     display: block;
     height: 10px;
   }
-  .df-navbar {
-    padding: 0%;
-  }
   nav ul li a {
     font-size: 20px;
     line-height: 5px;
@@ -453,10 +488,10 @@ li a.active, .menu a:hover {
     background: none;
     color: #fff;
   }
-  #check:checked ~ ul {
-    left: 0;
+  #check:checked ~ .menu {
+    margin: 0;
   }
-}
-.active {
-  background-color: none;
+  .active {
+    background-color: none;
+  }
 }/*# sourceMappingURL=style.css.map */

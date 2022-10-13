@@ -33,8 +33,9 @@ li a.active, li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     top:70px;
-    background-attachment: fixed;
+    background-attachment: static;
     background-position: center;
+    
 }
 /*fondo de pantalla de nosotros html*/
 .nosotros{
@@ -48,15 +49,11 @@ li a.active, li a:hover{
     width: 100%;
 }
 /*fondo de pantalla de productos html*/
-.productos{
-    background-image: url(../img/medialunas_argentinas.jpg);
-    background-repeat: no-repeat;
+.carousel-item img{
     background-size: cover;
     background-position: center;
-    height: 600px;
-    position: static;
-    bottom: 0;
-    width: 100%;
+    
+    
 }
 /*fondo de pantalla de servicios empresas html*/
 .serviciosempres{
@@ -83,26 +80,35 @@ li a.active, li a:hover{
 
 a{
     text-decoration: none;}
+.nav{
+    align-items: center;
+}
 
-
-.menu{
-    float: right;
-    margin-right: 20px;
+.menu ul{
+    
+    margin: 0;
     display: flex;
     list-style: none;
     text-transform: uppercase;
     border-radius: 15px;
-    position: relative;
-    justify-content:space-around;
+    padding: 0;
+    justify-content:flex-end;
+    
 }
-.menu  li  a {
-    margin: 0px;
-    margin-left: 0px;
+main{
+    margin: 15px;
+}
+
+/*productos: imagenes carrusel*/
+
+.menu li a {
     display: block;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
-    height: 100%; }
+    height: 40px; 
+    
+}
   
 
 /*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */

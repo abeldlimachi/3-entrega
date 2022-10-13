@@ -5,7 +5,7 @@ $estilos: (
 .bg-footer{
     background-color: map-get($estilos,color);
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@ $estilos: (
 .bg-footer-productos{
     background-color: #891619;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -73,6 +73,6 @@ $estilos: (
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     font-size: 17;
 }

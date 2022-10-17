@@ -11,17 +11,61 @@ body {
 .bg-footer {
   background-color: #891619;
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   color: #fff;
   display: flex;
   justify-content: space-between;
   grid-area: footer;
-  color: cadetblue;
-  margin: auto; }
+  height: 70px;
+  margin: auto; 
+}
+/*nuevas correcciones*/
+p.textindex{
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 3%;
+    
+ }
+.btn{
+  display: inline-block;
+  justify-content: center;
+  padding: 20px 40px;
+  border: 2px solid #891619;
+  color: #fff;
+  background: #891619;
+}
+.btn:hover{
+  background: none;
+}
+
+.btn-home{
+  display: flex;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 78vh !important;
+}
+/*main{
+  color: rgba(0, 0, 0, 0.4);  
+}*/
+/*hasta aqui las correcciones*/
 
 .redes {
+  display: flex;
+  justify-content: flex-end;
   height: 40px;
-  margin: 0px 60px; }
+  margin: 0px 60px;
+  padding: 10px;
+}
+i.fab{
+  margin: 0px 5px;
+  
+}
 
 /*color de los logos de ig, wsp y fb color blanco*/
 .fa-facebook-square {
@@ -43,12 +87,14 @@ body {
   padding: 20px;
   color: #fff;
   display: flex;
-  grid-area: footer; }
+  grid-area: footer;
+  height: 70px;
+}
 
 .bg-footer-productos {
   background-color: #891619;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -73,8 +119,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 10px;
-  font-size: 17; }
+  padding: 20px;
+  font-size: 17;
+  height: 70px;
+}
 
 /*header index*/
 .nav {
@@ -98,21 +146,51 @@ body {
   margin-top: 0px; }
 
 li a.active, li a:hover {
-  background: #fff;
+  background: rgb(214, 94, 94);
   color: #c01c1c;
   transition: .5s; }
 
-/*fondo de pantalla de index*/
-.index {
-  background-image: url(../img/medialunas_dulces.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 70px;
-  background-attachment: static;
-  background-position: center; }
+/*
 
+li a.active, li a:hover{
+    background: #fff;
+    color: aqua;
+    transition: .5s;
+}
+a.nav-link .text-white:hover{
+    color:aqua !important;
+    transition: .5s;
+}*/
+
+/*fondo de pantalla de index*/
+
+.header{
+  background: url(../img/bakery-g061bd8d0d_1920.jpg) no-repeat center;
+  background-size: cover;
+      
+}
+.title{
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
 /*fondo de pantalla de nosotros html*/
 .nosotros {
+  background-image: url(../img/medialunas_argentinas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
+  .contenido{
+    height: 78vh;
+  }
+  
+
+/*fondo de pantalla de productos html*/
+.productos {
   background-image: url(../img/medialunas_argentinas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,61 +200,77 @@ li a.active, li a:hover {
   bottom: 0;
   width: 100%; }
 
-/*fondo de pantalla de productos html*/
-.carousel-item img {
-  background-size: cover;
-  background-position: center; }
-
 /*fondo de pantalla de servicios empresas html*/
 .serviciosempres {
-  background-image: url(./img/Facturas-de-panaderia.jpg);
+  background-image: url(../img/Facturas-de-panaderia.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
-  position: static;
   bottom: 0;
-  width: 100%; }
+  width: 100%; 
+}
+.service{
+ height: 78vh; 
+}
+  
+.titleservemp{
+  left: 4%;
+  padding: 2%;
+  color:#fff;
+}
+.video-youtube{
+  border: 1px solid black;
+  height: 0px;
+  position: relative;
+  
+}
 
+.video-youtube iframe{
+  position: absolute; 
+  width: 100%;
+  top: 15%;
+}
+
+.youtube-wrapper{
+  width: 50%;
+  margin: auto;
+}
 /*fondo de pantalla de contacto html*/
 .contacto {
   background-image: url(../img/panaderia_imagen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  
   width: 100%; }
+
+div.contacto{
+  padding-bottom: 10px;
+}
 
 a {
   text-decoration: none; }
 
-.nav {
-  align-items: center; }
-
-.menu ul {
-  margin: 0;
+.menu {
+  float: right;
+  margin-right: 20px;
   display: flex;
   list-style: none;
   text-transform: uppercase;
   border-radius: 15px;
-  padding: 0;
-  justify-content: flex-end; }
+  position: relative;
+  justify-content: space-around; }
 
-main {
-  margin: 15px; }
-
-/*productos: imagenes carrusel*/
 .menu li a {
+  margin: 0px;
+  margin-left: 0px;
   display: block;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
-  height: 40px; }
+  height: 100%; }
 
 /*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */
-li a.active, .menu a:hover {
-  background-color: #fff;
-  color: #5e0b0b; }
 
 .checkbtn {
   font-size: 30px;
@@ -207,7 +301,9 @@ li a.active, .menu a:hover {
   margin: auto;
   margin-top: 35px;
   font-size: 15px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 71vh;
+}
 
 fieldset {
   width: 300px;
@@ -235,6 +331,12 @@ textarea {
 
 #boton:hover {
   cursor: pointer; }
+
+.df-ol {
+  background: url(./img/medialunas.jpg) no-repeat;
+  background-size: cover;
+  grid-area: df-ol;
+  top: 70px; }
 
 /*panes*/
 .caja1 {
@@ -341,44 +443,48 @@ textarea {
 .df-ol {
   margin: -0%;
   justify-content: space-around;
-  height: 485px;
+  height: 30%;
   padding: 10%;
   width: 100%;
   text-transform: uppercase;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "panes  dulces  salados" "tortas masas   bombones"; }
+  grid-template-areas: "panes  dulces  salados"
+ "tortas masas   bombones"; }
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   .df-ol {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 2fr);
     justify-content: auto;
-    grid-template-areas: "df-navbar  df-navbar" "panes panes" "dulces dulces" "salados    salados" "tortas tortas" "masas  masas" "bombones   bombones" "footer footer"; } }
-
+    grid-template-areas: "df-navbar  df-navbar"
+ "panes panes"
+ "dulces dulces"
+ "salados    salados"
+ "tortas tortas"
+ "masas  masas"
+ "bombones   bombones"
+ "footer footer"; } }*/
 @media screen and (max-width: 480px) {
   .menu li {
     font-size: 15px;
     display: grid;
-    line-height: 10px;
+    line-height: 30px;
     margin: 50px 0;
-    transition: all .5s;
-    height: 40px; } }
+    transition: all .5s; } }
 
 @media screen and (max-width: 480px) {
   .ul {
     position: fixed;
-    width: 70%;
-    top: 80px;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
     background: rgba(0, 0, 0, 0.95);
     text-align: center;
-    transition: all .5s; }
-  nav ul li a {
-    font-size: 10px;
-    line-height: 5px; } }
+    transition: all .5s; } }
 
 @media (max-width: 952px) {
   .enlace {
@@ -391,26 +497,32 @@ textarea {
     font-size: 12px; } }
 
 @media (max-width: 720px) {
+  .enlace {
+    padding-left: 20px; }
   .logo {
     padding-left: 30px; }
   .checkbtn {
     display: block; }
-  .df-ol {
+/*  .df-ol {
     font-size: 10px;
-    width: 300px; }
+    width: 300px; } A REVISAR PORQUE LO HICE */
   .index {
-    height: 1024px; }
+    height: 550px; }
   .menu {
+    display: block;
+    flex-direction: column;
     position: absolute;
-    width: 70%;
-    margin-left: -70%;
+    width: 100%;
+    height: 100vh;
     background: #913033;
-    margin-top: 60px;
+    margin-top: 78px;
     left: 100%;
     text-align: center;
     transition: all .5s; }
-  .menu ul {
-    flex-direction: column; }
+  .menu li {
+    display: block;
+    margin: 50px 0;
+    line-height: 40px; }
   .logo {
     margin-top: 0px; }
   .checkbtn {
@@ -420,13 +532,17 @@ textarea {
     padding-top: 10%;
     display: block;
     height: 10px; }
+  .df-navbar {
+    padding: 0%; }
   nav ul li a {
     font-size: 20px;
     line-height: 5px; }
   li a:hover, li a.active {
     background: none;
     color: #fff; }
-  #check:checked ~ .menu {
-    margin: 0; }
-  .active {
-    background-color: none; } }
+  #check:checked ~ ul {
+      left: 0; } 
+}
+
+.active {
+  background-color: none; }

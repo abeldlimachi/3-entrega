@@ -25,6 +25,7 @@ p.textindex{
     font-size: 18px;
     color: #fff;
     padding-left: 3%;
+    background: rgba(0, 0, 0, 0.4);
     
  }
 .btn{
@@ -89,6 +90,8 @@ i.fab{
   display: flex;
   grid-area: footer;
   height: 70px;
+  margin-top: auto;
+  justify-content: space-between;
 }
 
 .bg-footer-productos {
@@ -130,7 +133,7 @@ i.fab{
   height: 70px;
   width: 100%;
   padding: 10px;
-  font-size: 12px; }
+  font-size: 16px; }
 
 /*ubicacion del logo*/
 .enlace {
@@ -175,6 +178,7 @@ a.nav-link .text-white:hover{
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  background: rgba(0, 0, 0, 0.4);
 }
 /*fondo de pantalla de nosotros html*/
 .nosotros {
@@ -183,23 +187,65 @@ a.nav-link .text-white:hover{
   background-size: cover;
   background-position: center;
   width: 100%; }
-
+.title_nosotros{
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  width: 255px;
+  }
+  .title_quienes{
+  color:#fff;
+  background: rgba(0, 0, 0, 0.4);
+  width: 230px;
+  }
   .contenido{
     height: 78vh;
   }
-  
+  .parrafop,.parrafo{
+    color:#fff;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .panadero{
+    width: 80%;
+    padding-top: 50px;
+  }
+  .title_nosotros{
+    background: rgba(0, 0, 0, 0.4);
+  }
 
 /*fondo de pantalla de productos html*/
 .productos {
-  background-image: url(../img/medialunas_argentinas.jpg);
+  background-image: url(../img/productos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 89vh;
   position: static;
   bottom: 0;
-  width: 100%; }
-
+  width: 100%; 
+  list-style: none;
+  }
+  .ms-4{
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 235px;
+    margin-top: 0;
+    margin-left: 4%;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    
+    }
+    .navbar-collapse{
+      padding-top: 20px;
+      padding-left: 10px;
+      list-style: none;
+      background: #891619;
+    }
 /*fondo de pantalla de servicios empresas html*/
 .serviciosempres {
   background-image: url(../img/Facturas-de-panaderia.jpg);
@@ -215,8 +261,12 @@ a.nav-link .text-white:hover{
   
 .titleservemp{
   left: 4%;
-  padding: 2%;
+  margin-top: 2%;
+  margin-left: 3%;
   color:#fff;
+  background: rgba(0, 0, 0, 0.4);
+  width: 350px;
+  font-size: 40px;
 }
 .video-youtube{
   border: 1px solid black;
@@ -298,11 +348,18 @@ a {
 /*formulario*/
 .df-formulario {
   width: 300px;
-  margin: auto;
-  margin-top: 35px;
+  margin-bottom: 40px;
   font-size: 15px;
   box-sizing: border-box;
   height: 71vh;
+  margin-left: 12%;
+}
+#mapa{
+  margin-left: 80%;
+}
+.title.form{
+  font-size: 40px;
+  color: #fff;
 }
 
 fieldset {
@@ -474,8 +531,17 @@ textarea {
     display: grid;
     line-height: 30px;
     margin: 50px 0;
-    transition: all .5s; } }
-
+    transition: all .5s; } 
+  
+    /*parrafos de nosotros */
+  .parrafo{
+    display: none;
+  } 
+  /*imagen de panadero*/
+  .panadero{
+    padding-top: 50px;
+  }
+}
 @media screen and (max-width: 480px) {
   .ul {
     position: fixed;
@@ -494,7 +560,14 @@ textarea {
     margin-left: 10px;
     margin-top: 5px; }
   .nav ul li a {
-    font-size: 12px; } }
+    font-size: 12px; } 
+  .parrafo{
+    font-size: 14px;
+  }
+  .parrafop{
+    font-size: 14px;
+  }
+  }
 
 @media (max-width: 720px) {
   .enlace {
@@ -542,6 +615,9 @@ textarea {
     color: #fff; }
   #check:checked ~ ul {
       left: 0; } 
+  .panadero{
+    padding-top: 50px;
+  }
 }
 
 .active {
